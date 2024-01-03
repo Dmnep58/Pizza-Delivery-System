@@ -34,16 +34,5 @@ Usage
 
 
 <h4>Folder Structure</h4>
-pizza-delivery-system/
-│
-├── backend/
-│   ├── src/
-│   │   ├── main/
-│   │   │   ├── java/             (Java source files)
-│   │   │   └── resources/        (Configuration files)
-│   │   └── test/                 (Test files)
-│
-└── frontend/
-    ├── index.html                (Main HTML file)
-    ├── styles.css                (CSS styles)
-    └── script.js                 (JavaScript logic)
+![image](https://github.com/Dmnep58/Pizza-Delivery-System/assets/89973994/b7e40b5a-cedd-4ec4-9d2d-efcb2d836318)
+
