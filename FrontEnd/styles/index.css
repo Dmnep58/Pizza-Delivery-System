@@ -1,0 +1,442 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+
+
+/* navigation styling */
+
+nav{
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vw 2vw;
+    box-shadow: 2px 2px 10px rgb(0, 0, 0.15);
+    z-index: 999;
+}
+
+nav .logo img{
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+nav .nav-bar{
+    display: flex;
+}
+
+
+nav .nav-bar ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav .nav-bar ul li{
+    list-style: none;
+    margin-left: 30px;
+}
+
+nav .nav-bar ul li a{
+    text-decoration: none;
+    color: rgb(21, 21, 100);
+    font-size: 16px;
+    font-weight: 00;
+    transition: 0.3s ease;
+}
+
+nav .nav-bar ul li a:hover{
+    color: rgba(252, 193, 105, 0.681);
+    cursor: pointer;
+}
+
+nav .nav-bar ul li a.active{
+    color: rgba(252, 193, 105, 0.681);
+}
+
+nav .nav-bar ul #menu-close{
+    display: none;
+}
+
+nav .nav-bar #menu-btn{
+    width: 40px;
+    height: 40px;
+    display: none;
+}
+
+/* home */
+
+#home{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    padding: 2vw 6vw;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#home .description{
+    font-size: 2rem;
+}
+
+
+/* home animation */
+
+#home img , #home .description {
+    transform: translateX(-90px);
+    opacity: 0;
+}
+
+#home img {
+    animation: moveAndFade 2s ease-out forwards;
+}
+
+#home .description {
+    animation: moveAndFade 3s ease-in forwards;
+}
+
+/*animation */
+@keyframes moveAndFade {
+    0% {
+        transform: translateX(-90px);
+        opacity: 0;
+    }
+    50% {
+        transform: translateX(30px);
+        opacity: 0.7;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+/* add a class to description */
+
+
+
+
+/* pizzas section */
+
+#pizzas{
+    display: flex;
+    flex-direction: column;
+    background-color: beige;
+}
+
+#pizzas .name{
+    text-align: center;
+    font: 600;
+    font-size: 3rem;
+    padding: 2rem;
+}
+
+#pizzas .about-pizza{
+    margin-bottom: 30px;
+}
+
+#pizzas .about-pizza{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0.5rem;
+}
+
+#pizzas .pizza{
+        display: flex;
+        padding: 1rem;;
+        flex-direction: column;
+        flex-wrap: wrap;
+        box-shadow: 2px 2px 2px 2px rgb(81, 81, 86);
+        margin: 1rem;
+}
+
+#pizzas .pizza img{
+    mix-blend-mode: multiply;
+}
+
+#pizzas .pizza .pizzadesc h3{
+font-size: 2rem;
+font-weight: 400;   
+padding: 1vw 3vw;
+}
+
+#pizzas .pizza .pizzadesc .price{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 2rem 0 2rem;
+    text-align: center;
+}
+
+#pizzas .pizza .pizzadesc .price p{
+    border: none;
+    color: black;
+    background-color: azure;
+    border-radius: 20px;
+    padding: 1vw 1vw;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 300;
+}
+
+#pizzas .pizza .pizzadesc .price button{
+    border: none;
+    background-color: transparent;
+    font-size: large;
+    cursor: pointer;
+    transition: 0.3s ease;
+    color: black;
+}
+
+
+#pizzas .pizza .pizzadesc .price button:hover{
+    color: red;
+}
+
+
+
+/* about pizza section */
+
+#about-pizzas {
+    position: relative;
+    overflow: hidden;
+}
+
+#about-pizzas::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/aboutbg.jpeg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-filter: blur(8px);
+    filter: blur(8px);
+    z-index: -1;
+}
+
+  #about-pizzas > * {
+    /*content remains above the blurred background */
+    position: relative;
+    color: aliceblue;
+    padding: 2vw 4vw;
+    margin-bottom: 30px;
+}
+
+
+#about-pizzas .heading h2{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+#about-pizzas .heading p{
+    padding: 2vw 0;
+    justify-content: center;
+}
+
+
+
+
+
+/* footer styling*/
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 1vw 2vw;
+    background-color: rgb(57, 60, 60);
+    color: #fff;
+}
+
+footer .aboutsystem{
+    width: 30%;
+    padding: 1vw;
+}
+
+footer .aboutsystem img{
+    width: 125px;
+    height: 125px;
+    mix-blend-mode:color-dodge;
+    border-radius: 50%;
+}
+
+footer .navigation , footer .follow{
+    padding: 1vw;
+    text-align: center;
+}
+
+footer .navigation h2,
+footer .follow h2{
+ margin-bottom: 5px;
+}
+
+footer .navigation ul{
+    list-style: none;
+    font-size: medium;
+    font-weight: 200;
+}
+
+footer .navigation ul li{
+    margin-bottom: 5px;
+}
+
+footer .navigation ul li a{
+    text-decoration: none;
+    color: #fff;    
+    cursor: pointer;
+}
+
+footer .navigation ul li a:hover{
+    color: rgba(252, 193, 105, 0.681);
+}
+
+footer .follow .follow-logo i {
+    font-size: medium;
+    margin: 5px;
+    font-weight: 300;
+    cursor: pointer;
+    padding: 1vw;
+    border-radius: 3px;
+    background-color: black;
+    box-shadow: inset 1px 2px 1px 2px rgb(148, 153, 151),
+    inset 2px 1px 2px 1px rgb(205, 219, 213);
+}
+
+footer .follow .follow-logo i:hover{
+    background-color: #fff;
+    color: #000;
+    box-shadow: none;
+}
+
+
+
+/* copyright */
+
+.copyright{
+    text-align: center;
+    margin: 0.3vw;
+    font-size: medium;
+    font-weight: 400;
+}
+
+
+
+
+/* media queries */
+
+@media (max-width:1000px) {
+
+    #home{
+        padding: 1vw 2vw;
+    }
+
+    #home img{
+        width: 400px;
+        height: 400px;
+        overflow: hidden;
+    }
+    
+    
+}
+
+
+@media (max-width:695px) {
+
+    nav{
+        padding: 5px 15px;
+    }
+
+    nav .nav-bar #menu-btn{
+        display: initial;
+    }
+
+    nav .nav-bar ul #menu-close{
+        display: initial;
+        font-size: 1.6rem;
+        color: #fff;
+        padding: 30px 0 20px 20px;
+        cursor: pointer;
+    }
+
+    nav .nav-bar ul{
+        position: absolute;
+        top: 0;
+        right: -180px;
+        width: 180px;
+        height: 100vh;
+        background: rgba(17, 20, 104,0.45);
+        backdrop-filter: blur(4.5px);
+        border: 1px solid rgba(255, 255 ,255, 0.18);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        transition: 0.3s ease;
+    }
+
+    nav .nav-bar ul.active{
+        right: 0;
+    }
+
+    nav .nav-bar ul li{
+        padding: 20px 0 20px 40px;
+        margin-left: 0;
+    }
+
+    nav .nav-bar ul li a{
+        color: #fff;
+    }
+
+    #home{
+        flex-wrap: wrap; 
+        flex-direction: row-reverse; 
+        padding: 0%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #home img{
+        width: 350px;
+        height: 350px;
+        mix-blend-mode: multiply;
+        margin-bottom: 0%;
+    }
+
+
+    footer{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    footer .navigation ,
+    footer .follow,
+    footer .aboutsystem{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    footer .aboutsystem{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+        
+}
+
