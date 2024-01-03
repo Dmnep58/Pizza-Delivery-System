@@ -34,6 +34,6 @@ Usage
 
 
 <h4>Folder Structure</h4>
-<img href="![image](https://github.com/Dmnep58/Pizza-Delivery-System/assets/89973994/be5457ce-0204-44b6-b048-0a42f600d032)">
+<img src="![image](https://github.com/Dmnep58/Pizza-Delivery-System/assets/89973994/be5457ce-0204-44b6-b048-0a42f600d032)">
 
 
