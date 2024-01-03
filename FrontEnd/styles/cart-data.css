@@ -1,0 +1,76 @@
+body{
+    margin:  0;
+    padding: 0;
+    box-sizing: border-box;
+    background: fixed snow;
+}
+
+#Cart-Data{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#Cart-Data .cartIntro{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 150px;
+    margin-bottom: 50px;
+    font-weight: 800;
+}
+
+table{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    row-gap: 2vw;
+    border-collapse: collapse;
+}
+
+table td{
+    width: 25%;
+}
+
+table.cart-Data tbody tr{
+    border-bottom: 2pt solid black;
+}
+
+table.cart-Data tbody tr.order-Details{
+    border-bottom: 1pt solid black;
+}
+
+table .order-Details .about-Pizza{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2vw;
+    width: 100%;
+}
+
+table .order-Details .about-Pizza .pizza-desc{
+    padding: 1vw;
+}
+
+table.cart-Data tbody .pizza-Quantity{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+
+table.cart-Data tbody .pizza-Quantity p{
+    padding: 0.5vw;
+    border: 1px solid black;
+}
+
+
+
+
+
+
+
