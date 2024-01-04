@@ -49,6 +49,11 @@ table .order-Details .about-Pizza{
     width: 100%;
 }
 
+table .order-Details .about-Pizza img{
+mix-blend-mode: multiply;
+}
+
+
 table .order-Details .about-Pizza .pizza-desc{
     padding: 1vw;
 }
@@ -70,7 +75,42 @@ table.cart-Data tbody .pizza-Quantity p{
 
 
 
+/* pricing */
 
+.Pricing{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items:flex-end;
+    margin: 3vw;
+}
+
+.Pricing .TotalAmtGST table{
+    text-align: start;
+    table-layout: fixed;
+    margin: 1vw;
+}
+
+.Pricing .TotalAmtGST table  tr td{
+    padding: 5px;
+}
+
+.Pricing .TotalAmtGST table tr.AmountToPaid td{
+    border-top: 1px solid black;
+    padding: 2vw 0 ;
+}
+
+.Pricing .OrderNow{
+    width: 100%;
+    padding: 1vw;
+}
+.Pricing .OrderNow button{
+    width: 50%;
+    padding: 0.6vw;
+    font-size: 1rem;
+    font-weight: 600;
+}
 
 
 

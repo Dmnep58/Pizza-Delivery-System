@@ -58,10 +58,10 @@
                         <td> 299</td>
     
                         <td>
-                            <div class="pizza-Quantity">
-                                <p class="subtract_number">-</p>
-                                <p class="qunatity">1</p>
-                                <p class="add_number">+</p>
+                            <div class="pizza-Quantity" id="pizza-Qunatity">
+                                <p id="subtract_number">-</p>
+                                <p id="qunatity">1</p>
+                                <p id="add_number">+</p>
                             </div>
                         </td>
     
@@ -126,13 +126,33 @@
         </div>
 
 
+        <!-- pricing -->
+
         <div class="Pricing">
             <div class="TotalAmtGST">
-                <h3>Total <span>amt</span></h3>
-                <h3>GST <span>amt</span></h3>
-                <h3>Delivery Charge <span>amt</span></h3>
-                <hr>
-                <h3>Amount Payable : <span>amt</span></h3>
+                <table>
+
+                    <tr>
+                        <td>Total</td>
+                            <td>1122</td>
+                    </tr>
+
+                    <tr>
+                        <td>GST</td>
+                            <td>111.2</td>
+                    </tr>
+
+                    <tr>
+                        <td>Delivery Charge</td>
+                            <td>50</td>
+                    </tr>
+
+                    <tr class="AmountToPaid">
+                        <td>Total Amount</td>
+                        <td>1183.2</td>
+                    </tr>
+                    
+                </table>
             </div>
 
             <div class="OrderNow">
@@ -178,6 +198,6 @@
     </div>
     
     <script src="./js/index.js"></script>
-
+    <script src="./js/Cart.js"></script>
 </body>
 </html>
